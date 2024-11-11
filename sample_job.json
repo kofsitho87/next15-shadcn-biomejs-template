@@ -1,0 +1,234 @@
+{
+    "json": {
+        "id": 26100,
+        "authorUserId": 227,
+        "authorUser": {
+            "id": 227,
+            "sid": "temp-YuysnCzA3Yue5QDy1ywMDgRQ",
+            "name": "test2",
+            "email": "test@auoi.net",
+            "isEmailVerified": false,
+            "phoneNumber": "01025601024",
+            "isAgreedPromotionNotification": false,
+            "isAgreedTermsOfUse": true,
+            "isAgreedTermsOfPrivacy": true,
+            "isAgreedTermsOfLocation": true,
+            "isOver14YearsOld": true,
+            "languageCode": "MN_MN",
+            "nationalityCode": "KR",
+            "townCode": null,
+            "address": null,
+            "isOfficial": false,
+            "isBusiness": true,
+            "businessId": 126,
+            "business": null,
+            "isWithdrawn": false,
+            "willDeleteAt": null,
+            "nameLockExpiresIn": "2024-07-18T11:35:34.995Z",
+            "isDeveloper": true,
+            "isCrew": true,
+            "updatedAt": "2024-09-12T06:53:34.425Z",
+            "createdAt": "2024-06-14T01:25:23.688Z"
+        },
+        "type": "SYSTEM",
+        "title": [
+            {
+                "text": "fdf",
+                "language": "EN_US"
+            },
+            {
+                "text": "알바천국에서 사무직 구함2",
+                "language": "KO_KR"
+            },
+            {
+                "text": "sdfsdf",
+                "language": "VI_VN"
+            }
+        ],
+        "businessId": 126,
+        "business": {
+            "id": 126,
+            "ownerUserId": 227,
+            "ownerUser": {
+                "id": 227,
+                "sid": "temp-YuysnCzA3Yue5QDy1ywMDgRQ",
+                "name": "test2",
+                "email": "test@auoi.net",
+                "isEmailVerified": false,
+                "phoneNumber": "01025601024",
+                "isAgreedPromotionNotification": false,
+                "isAgreedTermsOfUse": true,
+                "isAgreedTermsOfPrivacy": true,
+                "isAgreedTermsOfLocation": true,
+                "isOver14YearsOld": true,
+                "languageCode": "MN_MN",
+                "nationalityCode": "KR",
+                "townCode": null,
+                "address": null,
+                "isOfficial": false,
+                "isBusiness": true,
+                "businessId": 126,
+                "business": null,
+                "isWithdrawn": false,
+                "willDeleteAt": null,
+                "nameLockExpiresIn": "2024-07-18T11:35:34.995Z",
+                "isDeveloper": true,
+                "isCrew": true,
+                "updatedAt": "2024-09-12T06:53:34.425Z",
+                "createdAt": "2024-06-14T01:25:23.688Z"
+            },
+            "name": "주식회사 포리덤",
+            "categoryId": 4,
+            "categoryTitle": "농림어업직",
+            "ownerName": "박종일",
+            "email": null,
+            "phoneNumber": "010-2560-1024",
+            "businessNumber": "330-86-03391",
+            "establishedDate": "2024-03-29",
+            "employeesCount": 1234,
+            "employeesCountCode": null,
+            "type": "UNKNOWN",
+            "capitalAmount": null,
+            "salesAmount": null,
+            "brandName": null,
+            "websiteUrl": null,
+            "address": {
+                "jibunAddress": "경기 성남시 분당구 백현동 582-7",
+                "roadAddress": "경기 성남시 분당구 판교역로 4",
+                "addressDetail": "ㄹ저ㅑ절",
+                "zipCode": "13536",
+                "provinceCode": "41",
+                "cityCode": "41135",
+                "townCode": "41135110",
+                "location": {
+                    "longitude": 127.112251443365,
+                    "latitude": 37.3836962064844
+                }
+            },
+            "town": {
+                "code": "41135110",
+                "provinceCode": "41",
+                "cityCode": "41135",
+                "name": "Baekhyeon-dong"
+            },
+            "refCode": null,
+            "refUrl": null,
+            "profileImage": {
+                "uuid": "xXyHmMozNVYnO5WIhlPghoCP",
+                "imageUrl": "https://static.vivace.theego.dev/vijob-dev/uploads/businesses/profile-images/202407/xXyHmMozNVYnO5WIhlPghoCP.png",
+                "thumbnailUrl": "https://static.vivace.theego.dev/vijob-dev/uploads/businesses/profile-images/202407/thumbnails/xXyHmMozNVYnO5WIhlPghoCP.png"
+            },
+            "images": [],
+            "primaryImage": null,
+            "isVerified": true,
+            "likesCount": 0,
+            "viewsCount": 1,
+            "reviewsCount": null,
+            "followersCount": null,
+            "updatedAt": "2024-08-14T02:13:41.832Z",
+            "createdAt": "2024-07-11T12:50:31.819Z"
+        },
+        "categoryId": 23002,
+        "categoryTitle": "프론트엔드개발자",
+        "address": {
+            "jibunAddress": "안녕",
+            "roadAddress": "안녕",
+            "addressDetail": "투썬월드빌딩 123",
+            "zipCode": "12356",
+            "provinceCode": "41",
+            "cityCode": "41111",
+            "townCode": "41111130",
+            "location": {
+                "longitude": 126.1234,
+                "latitude": 35.1234
+            }
+        },
+        "town": {
+            "code": "41111130",
+            "provinceCode": "41",
+            "cityCode": "41111",
+            "name": "Jeongja-dong"
+        },
+        "periodType": "UNKNOWN",
+        "workWeekDays": [
+            "SUN",
+            "FRI",
+            "SAT"
+        ],
+        "startDate": "2024-02-10",
+        "endDate": "2024-02-20",
+        "startTime": "09:00",
+        "endTime": "18:00",
+        "isTimeNegotiable": true,
+        "payType": "MONTHLY",
+        "payAmount": 18000,
+        "payMinAmount": 10000,
+        "payMaxAmount": 45000,
+        "tasks": [
+            {
+                "text": "업무들",
+                "language": "KO_KR"
+            }
+        ],
+        "description": [
+            {
+                "text": "dssd",
+                "language": "EN_US"
+            },
+            {
+                "text": "설명asdasdasd\na\nsd\nasd\n\nㅁㄴ\nㅇ\nㅁㄴㅇㅁㄴㅇ",
+                "language": "KO_KR"
+            },
+            {
+                "text": "fddfd",
+                "language": "MN_MN"
+            },
+            {
+                "text": "sss",
+                "language": "VI_VN"
+            }
+        ],
+        "preferential": [],
+        "breakTimes": [
+            {
+                "text": "휴게 시간",
+                "language": "KO_KR"
+            }
+        ],
+        "convenience": null,
+        "preferentialItems": [
+            "BACHELORS_DEGREE_OR_HIGHER"
+        ],
+        "providedItems": [
+            "ACCOMMODATION_SUPPORT",
+            "DORMITORY_PROVIDED",
+            "RENT_SUPPORT"
+        ],
+        "translatedStatus": [],
+        "contactChannels": [
+            "CALL",
+            "EMAIL",
+            "SMS"
+        ],
+        "tags": [
+            "식사 제공",
+            "외국인 가능"
+        ],
+        "dueType": "UNKNOWN",
+        "dueDate": "2024-02-20",
+        "refCode": null,
+        "refUrl": null,
+        "likesCount": 0,
+        "viewsCount": 0,
+        "contactedCount": 0,
+        "resumesCount": 0,
+        "viewedResumesCount": 0,
+        "commentsCount": 0,
+        "status": "OPENED",
+        "publishStatus": "PUBLISHABLE",
+        "publishIn": null,
+        "isBlocked": false,
+        "updatedAt": "2024-10-30T04:15:17.750Z",
+        "createdAt": "2024-10-28T00:55:52.601Z"
+    }
+}

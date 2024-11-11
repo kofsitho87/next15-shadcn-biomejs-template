@@ -1,0 +1,52 @@
+{
+    "background_color": "#000000",
+    "categories": [
+      "blog",
+      "personal"
+    ],
+    "description": "Vijob for Foreigner successful life in Korea",
+    "dir": "ltr",
+    "display": "standalone",
+    "gcm_sender_id": "0000000000",
+    "gcm_user_visible_only": true,
+    "icons": [
+      {
+        "purpose": "maskable",
+        "src": "https://admin.vijob.net/images/logos/vijob_symbol_white.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "purpose": "maskable",
+        "src": "https://admin.vijob.net/images/logos/vijob_symbol_white.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "https://admin.vijob.net/images/logos/vijob_symbol_white.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "lang": "ko-KR",
+    "name": "Vijob",
+    "orientation": "any",
+    "short_name": "Vijob",
+    "start_url": "/",
+    "theme_color": "#0092FB",
+    "scope": "/",
+    "android_package_name": null,
+    "prefer_related_applications": false,
+    "related_applications": [],
+    "launch_handler": {
+      "route_to": "existing-client",
+      "navigate_existing_client": "never"
+    },
+    "protocol_handlers": [
+      {
+        "protocol": "web+vijob",
+        "url": "/#%s"
+      }
+    ],
+    "version": "0.0.1"
+  }
