@@ -17,8 +17,6 @@
     "@langchain/community": "^0.3.6",
     "@langchain/core": "^0.3.13",
     "@langchain/openai": "^0.3.10",
-    "@livekit/components-react": "2.4.3",
-    "@livekit/components-styles": "1.0.12",
     "@next/third-parties": "^14.2.3",
     "@radix-ui/react-alert-dialog": "^1.1.2",
     "@radix-ui/react-avatar": "^1.1.0",

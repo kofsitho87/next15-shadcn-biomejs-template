@@ -1,80 +1,152 @@
-# Admin Web
+# Next.js Admin Boilerplate
 
-관리자 웹 애플리케이션입니다.
+Modern admin dashboard boilerplate built with Next.js 15 and Typescript.
 
-## 기술 스택
+## Tech Stack
 
-- Next.js 14.2.3
-- React
+### Core
+- Next.js 15
+- React 19 RC
 - TypeScript
-- TanStack Query
-- Tanstack Table
-- React Hook Form
-- Zod
 - Tailwind CSS
-- Shadcn UI
-- Supabase
 
-## 주요 기능
+### UI Components
+- Shadcn UI (Radix UI + Tailwind)
+- Custom components
+  - Data tables
+  - Multi-select
+  - Sidebar navigation
+  - Form components
+  - And more...
 
-- 대시보드
-  - 통계 데이터 시각화
-  - 사용자/피드 일별 추이 확인
-- 사용자 관리
-- 피드 관리
-- 실시간 화상 통화 관리 (LiveKit)
-- AI 튜터 관리
+### State Management & Data Fetching
+- TanStack Query v5 (React Query)
+- TanStack Table
+- React Hook Form
+- Zod (Schema validation)
+- Zustand (Optional)
 
-## 개발 환경 설정
+### Development Tools
+- Biome.js (Linting & Formatting)
+- Prettier
+- TypeScript ESLint
 
-1. 필수 요구사항
-   - Node.js 20.9.0
-   - Pnpm
+## Features
 
-2. 설치
+### Pre-built Components
+- Responsive dashboard layout
+- Data tables with filtering, sorting, and pagination
+- Form components with validation
+- Navigation sidebar
+- Toast notifications (Sonner)
+- Loading states & skeletons
+- Modal & dialog components
+- And more...
+
+### Authentication & Authorization
+- Role-based access control
+- Protected routes
+- Auth middleware
+
+### Development Features
+- Type-safe API routes
+- Form validation with Zod
+- Optimized data fetching with React Query
+- Consistent code style with Biome.js
+
+## Getting Started
+
+1. Requirements
+   - Node.js 20.9.0+
+   - pnpm
+
+2. Installation
    ```bash
-   # 의존성 설치
-   Pnpm install
+   # Clone the repository
+   git clone https://github.com/your-username/nextjs-admin-boilerplate.git
+
+   # Install dependencies
+   pnpm install
    ```
 
-3. 환경 변수 설정
+3. Environment Setup
    ```bash
-   # .env.local 파일 생성
+   # Create .env.local
    cp .env.example .env.local
    ```
-   `.env.local` 파일을 열어 필요한 환경 변수를 설정합니다:
-   - `NEXT_PUBLIC_SUPABASE_URL`: Supabase 프로젝트 URL
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Supabase 익명 키
-   - `LIVEKIT_API_KEY`: LiveKit API 키
-   - `LIVEKIT_API_SECRET`: LiveKit API 시크릿
 
-4. 개발 서버 실행
+4. Development
    ```bash
-   yarn dev
+   # Start development server
+   pnpm dev
    ```
-   http://localhost:3000 에서 애플리케이션에 접속할 수 있습니다.
+   Visit http://localhost:3000
 
-## 배포
+## Project Structure
 
-1. 프로덕션 빌드
+```
+├── app/                   # App router pages
+├── components/           
+│   ├── ui/               # Shadcn UI components
+│   └── ...               # Custom components
+├── lib/                   # Utility functions
+├── hooks/                # Custom hooks
+├── types/                # TypeScript types
+└── public/               # Static assets
+```
+
+## Customization
+
+### Styling
+- Tailwind CSS configuration in `tailwind.config.ts`
+- Global styles in `app/globals.css`
+- Shadcn UI theme in `components.json`
+
+### Adding New Components
+1. Use Shadcn UI CLI to add new components:
    ```bash
-   yarn build
+   pnpm dlx shadcn-ui add [component-name]
    ```
+2. Customize components in `components/ui/`
 
-2. 프로덕션 서버 실행
-   ```bash
-   yarn start
-   ```
+## Development Guide
 
-## 커밋 메세지 작성 방법
+### Code Style
+This project uses Biome.js for consistent code formatting:
 
-1. 커서의 composer를 열고 git diff 를 입력합니다.
-2. 커밋 메세지를 작성합니다.
-3. 예시
-   ```
-   feat: Job 관리 기능 및 인증 컴포넌트 구현
-   - Job 상세 보기 및 목록 뷰 컴포넌트 추가
-   - Job 폼 구현 (스키마, 디버그, 비즈니스 선택 기능)
-   - 인증 관련 컴포넌트 및 세션 처리 로직 구현
-   - 앱 사이드바 레이아웃 업데이트
-   ```
+```bash
+# Format code
+pnpm biome format .
+
+# Lint code
+pnpm biome lint .
+```
+
+### Commit Convention
+```
+<type>: <description>
+
+- Detailed change 1
+- Detailed change 2
+```
+
+Types:
+- feat: New feature
+- fix: Bug fix
+- docs: Documentation changes
+- style: Code formatting
+- refactor: Code refactoring
+- test: Test changes
+- chore: Build/package changes
+
+## Browser Support
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## License
+MIT License
+
+## Contributing
+Contributions are welcome! Please read our contributing guidelines before submitting a pull request.
