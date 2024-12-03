@@ -11,8 +11,8 @@ export default async function middleware(req: NextRequest) {
   // 3. 세션 검증
   const { isAuth } = await verifySession(nextResponse);
   if (!isAuth && !isPublicRoute) {
-    nextResponse.cookies.delete('seesion');
-    return NextResponse.redirect(new URL('/auth', req.nextUrl));
+    nextResponse.cookies.delete("session")
+    return NextResponse.redirect(new URL("/auth", req.nextUrl))
   }
 
   if (isAuth && isPublicRoute) {

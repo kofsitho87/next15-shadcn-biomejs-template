@@ -8,4 +8,11 @@ export const navItems: NavItem[] = [
     isActive: false,
     items: [], // Empty array as there are no child items for Dashboard
   },
+  {
+    title: "Job",
+    url: "/dashboard/job",
+    icon: "dashboard",
+    isActive: false,
+    items: [], // Empty array as there are no child items for Dashboard
+  },
 ]

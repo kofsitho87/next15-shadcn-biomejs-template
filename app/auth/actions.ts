@@ -1,7 +1,7 @@
 "use server"
 
 import { createSession, deleteSession } from "@/lib/session"
-import type { SignInResponseType } from "@/types/user"
+// import type { SignInResponseType } from "@/types/user"
 import { redirect } from "next/navigation"
 import * as z from "zod"
 
@@ -46,7 +46,20 @@ export async function signInAction(prevState: any, formData: FormData) {
 
   // TODO: 2. 로그인 처리
   try {
-    const signInResponse = await signIn({ sid, password })
+    // const signInResponse = await signIn({ sid, password })
+    const signInResponse = {
+      me: {
+        id: 1,
+        sid: "test",
+        name: "test",
+        role: "admin",
+      },
+      sign: {
+        accessToken: "accessToken",
+        refreshToken: "refreshToken",
+        accessTokenExpiresIn: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString(),
+      },
+    }
     const seesionUserData = {
       id: signInResponse.me.id,
       sid: signInResponse.me.sid,
@@ -92,5 +105,5 @@ export async function refreshToken(sign: { accessToken: string; refreshToken: st
     return null
   }
 
-  return data.data as SignInResponseType
+  return data.data
 }

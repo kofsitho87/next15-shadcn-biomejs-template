@@ -41,6 +41,7 @@ export async function createSession(user: SeesionUserItemType, sign: SignType) {
     sign,
     expiresAt,
   })
+  
 
   const cookieStore = await cookies()
   cookieStore.set("session", sessionValue, {
@@ -61,26 +62,26 @@ export async function verifySession(nextResponse: NextResponse) {
     return { isAuth: false, user: null }
   }
 
-  if (session) {
-    const now = new Date()
-    const tokenExpiresAt = new Date(session.sign.accessTokenExpiresIn)
-    const isTokenExpired = now.getTime() >= tokenExpiresAt.getTime()
+  // if (session) {
+  //   const now = new Date()
+  //   const tokenExpiresAt = new Date(session.sign.accessTokenExpiresIn)
+  //   const isTokenExpired = now.getTime() >= tokenExpiresAt.getTime()
 
-    // console.log('isTokenExpired', isTokenExpired);
-    // console.log(now, tokenExpiresAt);
+  //   // console.log('isTokenExpired', isTokenExpired);
+  //   // console.log(now, tokenExpiresAt);
 
-    if (isTokenExpired) {
-      //refresh token
-      const signinResponse = await refreshToken({
-        accessToken: session.sign.accessToken,
-        refreshToken: session.sign.refreshToken,
-      })
-      if (!signinResponse) {
-        return { isAuth: false, user: null }
-      }
-      await updateSession(nextResponse, signinResponse.sign)
-    }
-  }
+  //   if (isTokenExpired) {
+  //     //refresh token
+  //     const signinResponse = await refreshToken({
+  //       accessToken: session.sign.accessToken,
+  //       refreshToken: session.sign.refreshToken,
+  //     })
+  //     if (!signinResponse) {
+  //       return { isAuth: false, user: null }
+  //     }
+  //     await updateSession(nextResponse, signinResponse.sign)
+  //   }
+  // }
 
   return { isAuth: true, user: session.user }
 }
